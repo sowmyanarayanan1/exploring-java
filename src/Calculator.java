@@ -1,44 +1,45 @@
 
 public class Calculator {
 	public static void main(String[] args) {
-		int ra = Add(4, 2);
-		int rs = Sub(4, 2);
-		int rm = Multiply(4, 2);
-		int rd = Div(4, 2);
-		System.out.println(ra + "\n" + rs + "\n" + rm + "\n" + rd);
-		int elements [] = {2,4,6,8,9,10};
-		System.out.println(calculateaverage(elements));
+		Calculator calculator = new Calculator();
+
+		int additionResult = calculator.add(4, 2);
+		int subtractionResult = calculator.subtract(4, 2);
+		int multiplicationResult = calculator.multiply(4, 2);
+		double divisionResult = calculator.divide(3, 2);
+		
+		System.out.println(additionResult + "\n" + subtractionResult + "\n" + multiplicationResult + "\n" + divisionResult);
+		
+		int elements[] = { 2, 4, 6, 8, 9, 12 };
+		System.out.println(calculator.calculateAverage(elements));
 	}
 
-	public static int Add(int num1, int num2) {
+	public int add(int num1, int num2) {
 		int result = num1 + num2;
 		return result;
 	}
 
-	public static int Sub(int num1, int num2) {
+	public int subtract(int num1, int num2) {
 		int result = num1 - num2;
 		return result;
 	}
 
-	public static int Multiply(int num1, int num2) {
+	public int multiply(int num1, int num2) {
 		int result = num1 * num2;
 		return result;
 	}
 
-	public static int Div(int num1, int num2) {
-		int result = num1 / num2;
+	public double divide(double num1, int num2) {
+		double result = num1 / num2;
 		return result;
 	}
-	
-	public static double calculateaverage (int [] elements)
-	{
-		int result = elements[0];
-		for (int i=0;i<elements.length;i++)
-		{
-			result = result + elements[i];
-		}
-		double average = result/elements.length;
-		return average;
-		}
-	}
 
+	public double calculateAverage(int[] elements) {
+		double result = elements[0];
+		for (int index = 0; index < elements.length; index++) {
+			result = result + elements[index];
+		}
+		double average = result / elements.length;
+		return average;
+	}
+}
