@@ -1,26 +1,26 @@
-TestCaseID;Test case name;Step #;Test Step;Expected Result;Actual Result;Sample Data
-TC_1;Verify add functionality with int;;;;;
-;;;Give integer value 1;Value 1 should be given;;4
-;;;Give integer value 2;Value 2 should be given;;2
-;;;call add method;value 1 and 2 should get added;;
-;;;verify the result;result should be displayed for addition of value 1 and 2;;6
-TC_2;Verify add functionality with float;;;;;
-;;;Give decimal value 1;Value 1 should be given;;3.20
-;;;Give decimal value 2;Value 2 should be given;;2
-;;;call add method;value 1 and 2 should get added;;
-;;;verify the result;result should be displayed for addition of value 1 and 2;;5.2
-TC_3;Verify subtract functionality with init;;;;;
-;;;Give integer value 1;Value 1 should be given;;4
-;;;Give integer value 2;Value 2 should be given;;2
-;;;call subtract method;value 1 and 2 should get subtracted;;
-;;;verify the result;result should be displayed for subtraction of value 1 and 2;;2
-TC_4;Verify subtract functionality with float;;;;;
-;;;Give decimal value 1;Value 1 should be given;;3.2
-;;;Give decimal value 2;Value 2 should be given;;2
-;;;call subtract method;value 1 and 2 should get subtracted;;
-;;;verify the result;result should be displayed for subtraction of value 1 and 2;;1.2
-TC_5;Verify subtract functionality from lower value to higher value.;;;;;
-;;;Give low integer value;Value 1 should be given;;2
-;;;Give high integer value 2;Value 2 should be given;;4
-;;;call subtract method;value 1 and 2 should get subtracted;;
-;;;verify the result;result should be displayed as negative value for subtraction of value 1 and 2;;-2
+TestCaseID,Test case name,Step #,Test Step,Expected Result,Actual Result,Sample Data
+TC_1,Verify add functionality with int,,,,,
+,,,Give integer value 1,Value 1 should be given,,4
+,,,Give integer value 2,Value 2 should be given,,2
+,,,call add method,value 1 and 2 should get added,,
+,,,verify the result,result should be displayed for addition of value 1 and 2,,6
+TC_2,Verify add functionality with float,,,,,
+,,,Give decimal value 1,Value 1 should be given,,3.20
+,,,Give decimal value 2,Value 2 should be given,,2
+,,,call add method,value 1 and 2 should get added,,
+,,,verify the result,result should be displayed for addition of value 1 and 2,,5.2
+TC_3,Verify subtract functionality with int,,,,,
+,,,Give integer value 1,Value 1 should be given,,4
+,,,Give integer value 2,Value 2 should be given,,2
+,,,call subtract method,value 1 and 2 should get subtracted,,
+,,,verify the result,result should be displayed for subtraction of value 1 and 2,,2
+TC_4,Verify subtract functionality with float,,,,,
+,,,Give decimal value 1,Value 1 should be given,,3.2
+,,,Give decimal value 2,Value 2 should be given,,2
+,,,call subtract method,value 1 and 2 should get subtracted,,
+,,,verify the result,result should be displayed for subtraction of value 1 and 2,,1.2
+TC_5,Verify subtract functionality from lower value to higher value.,,,,,
+,,,Give low integer value,Value 1 should be given,,2
+,,,Give high integer value 2,Value 2 should be given,,4
+,,,call subtract method,value 1 and 2 should get subtracted,,
+,,,verify the result,result should be displayed as negative value for subtraction of value 1 and 2,,-2
