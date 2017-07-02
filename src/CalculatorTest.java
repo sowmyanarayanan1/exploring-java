@@ -1,28 +1,33 @@
 
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
 public class CalculatorTest {
 
 	Calculator calculator;
 
-	public static void main(String[] args) {
-
-		CalculatorTest calculatorTest = new CalculatorTest();
-		calculatorTest.calculator = new Calculator();
-		calculatorTest.addTest();
-		calculatorTest.subtractTest();
-		calculatorTest.multiplyTest();
-		calculatorTest.divisionTest();
-		calculatorTest.averageTest();
+	@Before
+	public void setUp() {
+		calculator = new Calculator();
 
 	}
 
+	@Test
 	public void addTest() {
 		double additionResult1 = calculator.add(4, 2);
+		Assert.assertEquals("Addition Result1:", 6, additionResult1, 0);
+
 		double additionResult2 = calculator.add(3.2, 2);
+		Assert.assertEquals("Addition Result2:", 5.2, additionResult2, 0);
 		// double additionResult3 = calculator.add(null,null);
-		System.out.println("Addition Result:" + "\n" + additionResult1 + "\n" + additionResult2);
+
 	}
 
+	@Test
 	public void subtractTest() {
+
 		double subtractionResult1 = calculator.subtract(4, 2);
 		double subtractionResult2 = calculator.subtract(3.2, 2);
 		double subtractionResult3 = calculator.subtract(2, 4);
@@ -31,6 +36,7 @@ public class CalculatorTest {
 				+ subtractionResult3 + "\n" + subtractionResult4);
 	}
 
+	@Test
 	public void multiplyTest() {
 		double multipilicationResult1 = calculator.multiply(4, 2);
 		double multipilicationResult2 = calculator.multiply(3.2, 2);
@@ -39,6 +45,7 @@ public class CalculatorTest {
 				+ "\n" + multipilicationResult3);
 	}
 
+	@Test
 	public void divisionTest() {
 		double divisionResult1 = calculator.divide(4, 2);
 		double divisionResult2 = calculator.divide(3.2, 2);
@@ -48,6 +55,7 @@ public class CalculatorTest {
 				+ "\n" + divisionResult4);
 	}
 
+	@Test
 	public void averageTest() {
 		float elements1[] = { 2, 4, 6, 8, 10 };
 		float elements2[] = { 1, 3, 5, 7, 1.2f };
@@ -57,6 +65,7 @@ public class CalculatorTest {
 		double averageResult3 = calculator.calculateAverage(elements3);
 		// double averageResult4 = calculator.calculateAverage(null);
 		System.out.println("average Result:" + "\n" + averageResult1 + "\n" + averageResult2 + "\n" + averageResult3);
+
 	}
 
 }
