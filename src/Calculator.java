@@ -1,18 +1,5 @@
 
 public class Calculator {
-	public static void main(String[] args) {
-		//Calculator calculator = new Calculator();
-
-		//int additionResult = calculator.add(4, 2);
-		//int subtractionResult = calculator.subtract(4, 2);
-		//int multiplicationResult = calculator.multiply(4, 2);
-		//double divisionResult = calculator.divide(3, 2);
-		
-		//System.out.println(additionResult + "\n" + subtractionResult + "\n" + multiplicationResult + "\n" + divisionResult);
-		
-		//int elements[] = { 2, 4, 6, 8, 9, 12 };
-		//System.out.println(calculator.calculateAverage(elements));
-	}
 
 	public double add(double num1, int num2) {
 		double result = num1 + num2;
