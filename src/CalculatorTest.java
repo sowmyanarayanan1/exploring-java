@@ -1,7 +1,6 @@
 
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class CalculatorTest {
@@ -11,7 +10,6 @@ public class CalculatorTest {
 	@Before
 	public void setUp() {
 		calculator = new Calculator();
-
 	}
 
 	@Test
@@ -22,18 +20,19 @@ public class CalculatorTest {
 		double additionResult2 = calculator.add(3.2, 2);
 		Assert.assertEquals("Addition Result2:", 5.2, additionResult2, 0);
 		// double additionResult3 = calculator.add(null,null);
-
 	}
 
 	@Test
 	public void subtractTest() {
 
 		double subtractionResult1 = calculator.subtract(4, 2);
+		Assert.assertEquals("subtraction Result", 2, subtractionResult1, 0);
 		double subtractionResult2 = calculator.subtract(3.2, 2);
+		Assert.assertEquals(1.2, subtractionResult2, 0.01);
 		double subtractionResult3 = calculator.subtract(2, 4);
+		Assert.assertEquals(-2, subtractionResult3, 0);
 		double subtractionResult4 = calculator.subtract(6 / 2, 2);
-		System.out.println("Subtraction Result:" + "\n" + subtractionResult1 + "\n" + subtractionResult2 + "\n"
-				+ subtractionResult3 + "\n" + subtractionResult4);
+		Assert.assertEquals(1, subtractionResult4, 0);
 	}
 
 	@Test
@@ -41,12 +40,14 @@ public class CalculatorTest {
 		double multipilicationResult1 = calculator.multiply(4, 2);
 		double multipilicationResult2 = calculator.multiply(3.2, 2);
 		double multipilicationResult3 = calculator.multiply(1 / 2.0, 2);
+		Assert.fail("Not Implemented");
 		System.out.println("Multiplication Result:" + "\n" + multipilicationResult1 + "\n" + multipilicationResult2
 				+ "\n" + multipilicationResult3);
 	}
 
 	@Test
 	public void divisionTest() {
+		Assert.fail("Not Implemented");
 		double divisionResult1 = calculator.divide(4, 2);
 		double divisionResult2 = calculator.divide(3.2, 2);
 		double divisionResult3 = calculator.divide(1 / 2.0, 2);
@@ -57,6 +58,7 @@ public class CalculatorTest {
 
 	@Test
 	public void averageTest() {
+		Assert.fail("Not Implemented");
 		float elements1[] = { 2, 4, 6, 8, 10 };
 		float elements2[] = { 1, 3, 5, 7, 1.2f };
 		float elements3[] = { 1, 3, 5, 7, 1 / 2.0f };
