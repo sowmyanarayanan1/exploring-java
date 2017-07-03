@@ -43,19 +43,17 @@ public class CalculatorTest {
 		Assert.assertEquals(6.4, multipilicationResult2, 0);
 		double multipilicationResult3 = calculator.multiply(1 / 2.0, 2);
 		Assert.assertEquals(1, multipilicationResult3, 0);
-		System.out.println("Multiplication Result:" + "\n" + multipilicationResult1 + "\n" + multipilicationResult2
-				+ "\n" + multipilicationResult3);
 	}
 
 	@Test
 	public void divisionTest() {
-		Assert.fail("Not Implemented");
 		double divisionResult1 = calculator.divide(4, 2);
+		Assert.assertEquals(2, divisionResult1,0);
 		double divisionResult2 = calculator.divide(3.2, 2);
+		Assert.assertEquals(1.6, divisionResult2,0);
 		double divisionResult3 = calculator.divide(1 / 2.0, 2);
-		double divisionResult4 = calculator.divide(2, 0);
-		System.out.println("Division Result:" + "\n" + divisionResult1 + "\n" + divisionResult2 + "\n" + divisionResult3
-				+ "\n" + divisionResult4);
+		Assert.assertEquals(0.25, divisionResult3,0);
+		//double divisionResult4 = calculator.divide(2, 0);
 	}
 
 	@Test
