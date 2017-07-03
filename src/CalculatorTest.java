@@ -38,9 +38,11 @@ public class CalculatorTest {
 	@Test
 	public void multiplyTest() {
 		double multipilicationResult1 = calculator.multiply(4, 2);
+		Assert.assertEquals(8, multipilicationResult1, 0);
 		double multipilicationResult2 = calculator.multiply(3.2, 2);
+		Assert.assertEquals(6.4, multipilicationResult2, 0);
 		double multipilicationResult3 = calculator.multiply(1 / 2.0, 2);
-		Assert.fail("Not Implemented");
+		Assert.assertEquals(1, multipilicationResult3, 0);
 		System.out.println("Multiplication Result:" + "\n" + multipilicationResult1 + "\n" + multipilicationResult2
 				+ "\n" + multipilicationResult3);
 	}
