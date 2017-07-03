@@ -1,11 +1,28 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.github.sowmyanarayanan1</groupId>
+	<groupId>com.github.sowmyanarayanan1x</groupId>
 	<artifactId>exploring-java</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Exploring Java</name>
-	<description>Leraning Java in a practical way</description>
+	<description>Learning Java in a practical way</description>
+	<issueManagement>
+		<url>https://github.com/sowmyanarayanan1/exploring-java/issues</url>
+		<system>GitHub Issues</system>
+	</issueManagement>
+	<scm>
+		<url>https://github.com/sowmyanarayanan1/exploring-java</url>
+		<connection>scm:git:git://github.com/sowmyanarayanan1/exploring-java.git</connection>
+		<developerConnection>scm:git:git@github.com:sowmyanarayanan1/exploring-java.git</developerConnection>
+	</scm>
+	<developers>
+		<developer>
+			<email>sowmya_narayanan@outlook.com</email>
+			<name>Sowmya Narayanan</name>
+			<url>https://github.com/sowmyanarayanan1</url>
+			<id>sowmyanarayanan1</id>
+		</developer>
+	</developers>
 	<build>
 		<plugins>
 			<plugin>
