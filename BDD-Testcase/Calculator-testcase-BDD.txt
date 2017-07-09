@@ -1,0 +1,66 @@
+Calculator
+
+Scenario Otline: Addition.
+	Given <num1> and <num2> for addition
+	When I call add method
+	Then Addition result <Result> should be displayed
+
+Examples:
+	| num1	| num2	|Result	|
+	| 4	| 2	| 6	|
+	| 3.2	| 2	| 5.2	|
+
+Scenario Otline: Subtraction.
+	Given <num1> and <num2> for subtraction
+	When I call subtract method
+	Then Subtraction result <Result> should be displayed
+
+Examples:
+	| num1	| num2	|Result	|
+	| 4	| 2	| 2	|
+	| 3.2	| 2	| 1.2	|
+	| 2	| 4	| -2	|
+	| 6/2	| 2	| 1	|
+
+Scenario Otline: Multipilication.
+	Given <num1> and <num2> for multiplication
+	When I call multiply method
+	Then Multipilication result <Result> should be displayed
+
+Examples:
+	| num1	| num2	|Result	|
+	| 4	| 2	| 8	|
+	| 3.2	| 2	| 6.4	|
+	| 1/2	| 2	| 1	|
+
+Scenario Otline: Division.
+	Given <num1> and <num2> for division
+	When I call divide method
+	Then Division result <Result> should be displayed
+
+Examples:
+	| num1	| num2	|Result	|
+	| 4	| 2	| 2	|
+	| 3.2	| 2	| 1.6	|
+	| 1/2	| 2	| 0.25	|
+
+Scenario Otline: Division negative scenario.
+	Given <num1> and <num2> for division
+	When I call divide method
+	Then Error message should be displayed
+
+Examples:
+	| num1	| num2	|
+	| 2	| 0	|
+
+Scenario Otline: calculating average.
+	Given <five numbers> for calculate an average
+	When I call calculateAverage method
+	Then Average <Result> should be displayed
+
+Examples:
+	| five numbers|Result	|
+	| 2,4,6,8,10  | 6	|
+	| 1,3,5,7,1.2 | 3.44	|
+	| 1,3,5,7,1/2 | 3.3	|
+
